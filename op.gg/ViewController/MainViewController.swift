@@ -15,7 +15,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        opggimage.image = UIImage(named:"opgg")
+        opggimage.image = UIImage(named:"opgg")
         gmaer.returnKeyType = .done
         gmaer.borderStyle = .bezel
         gmaer.textColor = .black
@@ -23,19 +23,19 @@ class MainViewController: UIViewController {
         gmaer.text = "🔍 소환사 검색"
     }
 }
-extension MainViewController: UITableViewDelegate, UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    
-    }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell
-        return cell ?? TableViewCell()
-        
-    }
-   
-}
+//extension MainViewController: UITableViewDelegate, UITableViewDataSource{
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//
+//    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as? TableViewCell
+//        return cell ?? TableViewCell()
+//
+//    }
+//
+//}

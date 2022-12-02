@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2DDD5A293A3E7200DA19C4 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2DDD59293A3E7200DA19C4 /* MainViewController.xib */; };
 		8CA03F312939E7D800EC9F34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA03F2F2939E7D800EC9F34 /* MainViewController.swift */; };
 		8CA03F352939EAF500EC9F34 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA03F332939EAF500EC9F34 /* TableViewController.swift */; };
 		8CA03F362939EAF500EC9F34 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA03F342939EAF500EC9F34 /* TableViewController.xib */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C2DDD59293A3E7200DA19C4 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		8CA03F2F2939E7D800EC9F34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8CA03F332939EAF500EC9F34 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8CA03F342939EAF500EC9F34 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA03F2F2939E7D800EC9F34 /* MainViewController.swift */,
+				8C2DDD59293A3E7200DA19C4 /* MainViewController.xib */,
 				8CA03F332939EAF500EC9F34 /* TableViewController.swift */,
 				8CA03F342939EAF500EC9F34 /* TableViewController.xib */,
 			);
@@ -155,6 +158,7 @@
 			files = (
 				8CA1126C2935FB450086B021 /* LaunchScreen.storyboard in Resources */,
 				8CA03F3A2939F43D00EC9F34 /* TableViewCell.xib in Resources */,
+				8C2DDD5A293A3E7200DA19C4 /* MainViewController.xib in Resources */,
 				8CA112692935FB450086B021 /* Assets.xcassets in Resources */,
 				8CA03F362939EAF500EC9F34 /* TableViewController.xib in Resources */,
 			);
