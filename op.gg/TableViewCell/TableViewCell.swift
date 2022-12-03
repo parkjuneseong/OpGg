@@ -9,12 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var oooo: UILabel!
+    @IBOutlet weak var iconImage: UIImageView!
+    
+   
     override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        oooo.text = "제발 나와줘"
+        iconImage.image = UIImage(named:"icon")
+//        let size : CGSize = .init(width: 100, height: 100)
     }
-
+    
    
 }
