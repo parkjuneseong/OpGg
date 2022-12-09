@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="op_gg" customModuleProvider="target">
             <connections>
                 <outlet property="gmaer" destination="vuQ-j6-ejg" id="qEe-ID-kcP"/>
-                <outlet property="headerView" destination="czR-Ji-Sec" id="QmY-ik-rOr"/>
+                <outlet property="headerView" destination="czR-Ji-Sec" id="lqX-xv-tbg"/>
                 <outlet property="opggimage" destination="5sV-cF-zyE" id="XWZ-j0-ZrC"/>
                 <outlet property="tableView" destination="2mr-Xd-1HM" id="oDL-Mn-rJL"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hXF-le-SKP"/>
@@ -23,27 +23,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czR-Ji-Sec">
-                    <rect key="frame" x="0.0" y="44" width="420" height="170"/>
+                    <rect key="frame" x="0.0" y="44" width="428" height="170"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sV-cF-zyE">
-                            <rect key="frame" x="2" y="1" width="140" height="80"/>
+                            <rect key="frame" x="2" y="1" width="148" height="80"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukr-ei-5KI">
-                            <rect key="frame" x="270" y="1" width="37" height="32"/>
+                            <rect key="frame" x="278" y="1" width="37" height="32"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="kr"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIa-KN-jk0">
-                            <rect key="frame" x="357" y="1" width="43" height="31"/>
+                            <rect key="frame" x="365" y="1" width="43" height="31"/>
                             <color key="tintColor" systemColor="labelColor"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="list"/>
                         </button>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vuQ-j6-ejg">
-                            <rect key="frame" x="1" y="118" width="418" height="50"/>
+                            <rect key="frame" x="1" y="118" width="426" height="50"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="418" id="Pe0-T3-mgj"/>
+                                <constraint firstAttribute="width" constant="426" id="Pe0-T3-mgj"/>
                                 <constraint firstAttribute="height" constant="50" id="SjJ-zk-vFu"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -52,6 +52,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBlueColor"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="428" id="8eT-Le-KQ2"/>
                         <constraint firstItem="5sV-cF-zyE" firstAttribute="leading" secondItem="czR-Ji-Sec" secondAttribute="leading" constant="2" id="Bip-oh-sC7"/>
                         <constraint firstItem="ukr-ei-5KI" firstAttribute="top" secondItem="czR-Ji-Sec" secondAttribute="top" constant="1" id="GD0-uz-Bzd"/>
                         <constraint firstItem="vuQ-j6-ejg" firstAttribute="leading" secondItem="czR-Ji-Sec" secondAttribute="leading" constant="1" id="LUs-up-sn3"/>
@@ -85,7 +86,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2mr-Xd-1HM" secondAttribute="bottom" id="weQ-8S-8PC"/>
                 <constraint firstItem="2mr-Xd-1HM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xR3-dW-THV"/>
             </constraints>
-            <point key="canvasLocation" x="370" y="82"/>
+            <point key="canvasLocation" x="-257" y="47"/>
         </view>
     </objects>
     <resources>
