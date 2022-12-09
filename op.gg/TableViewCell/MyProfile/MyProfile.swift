@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionCell1: UITableViewCell {
+class MyProfile: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     
@@ -17,13 +17,15 @@ class SectionCell1: UITableViewCell {
     
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var profile: UIView!
-    override func awakeFromNib() {
-//        nickName.text = "72세 병만이"
-//        closeButton.backgroundColor = .yellow
-//        iconImage.image = UIImage(named:"icon")
-//        gamerTear.text = "플레"
-//        let size : CGSize = .init(width: 100, height: 100)
-    }
-    
    
+    func bind(model: Cell1Model?) {
+    // nil check
+    guard let model = model else {
+        return
+    }
+    iconImage.image = model.iconImage
+    nickName.text = model.nickName
+    gamerTear.text = model.gamerTear
+    }
 }
+

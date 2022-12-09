@@ -16,15 +16,15 @@ class SectionCell3: UITableViewCell {
     
     @IBOutlet weak var searchGamer: UIButton!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func bind(model: Cell3Model?) {
+    // nil check
+    guard let model = model else {
+        return
     }
+        gamerName.text = model.gamerName
+        changeOrder.text = model.changeOrder
+        gamerList.text = model.gamerList
+        searchGamer.setTitle(model.searchGamer, for: .normal)
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
 }

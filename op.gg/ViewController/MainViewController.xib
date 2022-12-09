@@ -73,6 +73,10 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="675" id="gYy-v7-X45"/>
                     </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zZw-GU-4pA"/>
+                        <outlet property="delegate" destination="-1" id="G8v-WO-NOE"/>
+                    </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

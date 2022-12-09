@@ -13,15 +13,16 @@ class AdvertiseCell: UITableViewCell {
     @IBOutlet weak var gameExplain: UILabel!
     @IBOutlet weak var gameImage: UIImageView!
     @IBOutlet weak var playGame: UIButton!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-//        gameImage.image = UIImage(named:"zom")
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+   
     
-}
+     func bind(model: Cell2Model?) {
+     // nil check
+     guard let model = model else {
+         return
+     }
+     gameName.text = model.gameName
+     gameExplain.text = model.gameExplain
+     gameImage.image = model.gameImage
+     playGame.setTitle(model.playGame, for: .normal)
+     }
+ }
