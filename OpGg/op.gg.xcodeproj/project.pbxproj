@@ -24,6 +24,7 @@
 		3F012944294B0793006C74A1 /* LastCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F012943294B0793006C74A1 /* LastCellPresenter.swift */; };
 		3F1657E52950575D002D2627 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E42950575D002D2627 /* PaddingLabel.swift */; };
 		3F1657E729506377002D2627 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E629506377002D2627 /* UIView+Border.swift */; };
+		3F1657E929506679002D2627 /* String+MiddleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E829506679002D2627 /* String+MiddleLine.swift */; };
 		3F676D98294ED8B5007B4E45 /* CumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D96294ED8B5007B4E45 /* CumView.swift */; };
 		3F676D99294ED8B5007B4E45 /* CumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F676D97294ED8B5007B4E45 /* CumView.xib */; };
 		3F676D9D294ED8D0007B4E45 /* SetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D9B294ED8D0007B4E45 /* SetView.swift */; };
@@ -92,6 +93,7 @@
 		3F012943294B0793006C74A1 /* LastCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCellPresenter.swift; sourceTree = "<group>"; };
 		3F1657E42950575D002D2627 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddingLabel.swift; path = ../../../../../Documents/PaddingLabel.swift; sourceTree = "<group>"; };
 		3F1657E629506377002D2627 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		3F1657E829506679002D2627 /* String+MiddleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MiddleLine.swift"; sourceTree = "<group>"; };
 		3F676D96294ED8B5007B4E45 /* CumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumView.swift; sourceTree = "<group>"; };
 		3F676D97294ED8B5007B4E45 /* CumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CumView.xib; sourceTree = "<group>"; };
 		3F676D9B294ED8D0007B4E45 /* SetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				3F00DD3F294F0307008E7C6A /* CommonFooterView.swift */,
 				3F00DD41294F0325008E7C6A /* CommonFooterView.xib */,
 				3F1657E42950575D002D2627 /* PaddingLabel.swift */,
+				3F1657E829506679002D2627 /* String+MiddleLine.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				3F012936294AF51F006C74A1 /* OrderGame.swift in Sources */,
 				3F012941294B0782006C74A1 /* LastCell.swift in Sources */,
 				8CA112602935FB400086B021 /* AppDelegate.swift in Sources */,
+				3F1657E929506679002D2627 /* String+MiddleLine.swift in Sources */,
 				8CCEA738293DD65500B4299A /* FavoriteCell.swift in Sources */,
 				8C375E5B294604BF00E7F437 /* PatchNoteCell.swift in Sources */,
 				3FDB29B629486FB500BBA4F8 /* FavoriteChampPresenter.swift in Sources */,

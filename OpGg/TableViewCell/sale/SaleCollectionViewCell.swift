@@ -26,7 +26,8 @@ class SaleCollectionViewCell: UICollectionViewCell {
     func bind(model:SaleModel){
 
         salecolImage.image = model.salecolImage
-        price.text = model.price
+//        price.text = model.price
+        price.attributedText = model.price.strikeThrough()
         one.text = model.one
         two.text = model.two
         three.text = model.three
