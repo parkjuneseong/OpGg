@@ -41,7 +41,7 @@ extension OrderGamePresenter: CommonTablePresenter {
 
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30))
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
             view.headerLabel.text = "다른 게임 전적 보기"
             view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
             return view
@@ -52,7 +52,26 @@ extension OrderGamePresenter: CommonTablePresenter {
 
     var headerHeight: CGFloat {
         get {
-            return 30
+            return 50
+        } set {
+            _ = newValue
+        }
+    }
+    var footerView: UIView? {
+        get {
+            let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 15))
+      
+           
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerHeight: CGFloat {
+        get {
+            return 15
         } set {
             _ = newValue
         }

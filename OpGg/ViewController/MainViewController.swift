@@ -140,10 +140,10 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
         orderGameList.append(ordergameMode4)
     }
     private func setSaleModel(){
-        let saleModel = SaleModel(saleImage: UIImage(named:"saleTitle") ?? UIImage(), discountShow: "모두보기", during: "~12.19", discountPrice: "560RP", salecolImage: UIImage(named:"saleChamp1") ?? UIImage(), price: "975RPx  ~12.19", one:"Champion",two:"조이",three:"60%",four:"390RP")
-        let saleModel2 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp2") ?? UIImage(), price: "1350RP x ~12.24",one:"Skin",two: "어둠의인도자 야스오",three:"60%",four:"975RP")
-        let saleModel3 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp3") ?? UIImage(), price:"580RP x ~12.31",one: "Champion",two: "그라가스", three: "75%",four: "190RP")
-        let saleModel4 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp4") ?? UIImage(), price:"1680 x  ~12.31",one: "Skin",two: "3D카이사",three:"10%",four: "1520RP")
+        let saleModel = SaleModel(saleImage: UIImage(named:"saleTitle") ?? UIImage(), discountShow: "모두 보기", during: "~12.19", discountPrice: "560RP", salecolImage: UIImage(named:"saleChamp1") ?? UIImage(), price: "975RP", one:"Champion",two:"조이",three:"60%",four:"390RP",five: "~12.19")
+        let saleModel2 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp2") ?? UIImage(), price: "1350RP",one:"Skin",two: "어둠의인도자 야스오",three:"60%",four:"975RP",five: "~12.24")
+        let saleModel3 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp3") ?? UIImage(), price:"580RP",one: "Champion",two: "그라가스", three: "75%",four: "190RP",five: "~12.31")
+        let saleModel4 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp4") ?? UIImage(), price:"1680RP",one: "Skin",two: "3D카이사",three:"10%",four: "1520RP",five:"~12.31")
                                    
         
         saleList.append(saleModel)

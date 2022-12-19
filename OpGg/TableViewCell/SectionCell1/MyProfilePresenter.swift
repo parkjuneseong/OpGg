@@ -39,4 +39,23 @@ extension MyProfilePresenter: CommonTablePresenter {
     func numberOfRows(in section: Int) -> Int {
         return 1
     }
+    var footerView: UIView? {
+        get {
+            let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 15))
+      
+           
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerHeight: CGFloat {
+        get {
+            return 15
+        } set {
+            _ = newValue
+        }
+    }
 }

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,6 +35,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" name="backGroundColor"/>
                 <constraints>
                     <constraint firstItem="Bmj-19-iE6" firstAttribute="top" secondItem="Q1u-0A-ieb" secondAttribute="bottom" constant="20" id="GWn-qh-eJ3"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Bmj-19-iE6" secondAttribute="trailing" constant="40" id="NFg-1g-fKO"/>
@@ -51,4 +53,9 @@
             <point key="canvasLocation" x="137" y="32"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="backGroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

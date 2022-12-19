@@ -37,10 +37,10 @@
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-uX-vHq">
-                        <rect key="frame" x="0.0" y="96" width="28" height="20"/>
+                        <rect key="frame" x="0.0" y="96" width="35" height="20"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qir-Fw-SXQ">
-                                <rect key="frame" x="0.0" y="0.0" width="28" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qir-Fw-SXQ" customClass="PaddingLabel" customModule="op_gg" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="20"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                             <constraint firstItem="qir-Fw-SXQ" firstAttribute="top" secondItem="UOc-uX-vHq" secondAttribute="top" id="6MD-Lq-uwm"/>
                             <constraint firstAttribute="bottom" secondItem="qir-Fw-SXQ" secondAttribute="bottom" id="kCK-9z-NYo"/>
                             <constraint firstItem="qir-Fw-SXQ" firstAttribute="leading" secondItem="UOc-uX-vHq" secondAttribute="leading" id="ncr-ul-yvk"/>
-                            <constraint firstAttribute="width" constant="28" id="p2g-0l-kSy"/>
+                            <constraint firstAttribute="width" constant="35" id="p2g-0l-kSy"/>
                             <constraint firstAttribute="trailing" secondItem="qir-Fw-SXQ" secondAttribute="trailing" id="xEX-1Y-FES"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -75,15 +75,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m2-bO-QHW">
-                        <rect key="frame" x="29" y="97.333333333333329" width="79" height="15.666666666666671"/>
+                        <rect key="frame" x="36" y="97.333333333333329" width="72" height="15.666666666666671"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                         <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLo-4x-pgV">
+                        <rect key="frame" x="81" y="116" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="kLo-4x-pgV" secondAttribute="trailing" constant="3" id="BCe-0T-BgC"/>
                 <constraint firstItem="n4C-Qm-iV1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bqb-Rw-Vof"/>
                 <constraint firstItem="wbv-17-dMI" firstAttribute="top" secondItem="uqG-Pa-eHD" secondAttribute="bottom" constant="2" id="CES-5Y-4hJ"/>
                 <constraint firstItem="n4C-Qm-iV1" firstAttribute="top" secondItem="wbv-17-dMI" secondAttribute="bottom" constant="1" id="Hfi-ib-AHJ"/>
@@ -96,6 +103,7 @@
                 <constraint firstItem="HSd-aS-4Bk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gLF-aS-ney"/>
                 <constraint firstItem="uqG-Pa-eHD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jMK-Ic-600"/>
                 <constraint firstAttribute="trailing" secondItem="uqG-Pa-eHD" secondAttribute="trailing" id="n5z-Ev-NKe"/>
+                <constraint firstItem="kLo-4x-pgV" firstAttribute="top" secondItem="7m2-bO-QHW" secondAttribute="bottom" constant="3" id="r62-wS-VWr"/>
                 <constraint firstItem="7m2-bO-QHW" firstAttribute="leading" secondItem="UOc-uX-vHq" secondAttribute="trailing" constant="1" id="sd3-pj-rwy"/>
                 <constraint firstItem="UOc-uX-vHq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xjD-gc-xaw"/>
             </constraints>
@@ -107,6 +115,7 @@
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
+                <outlet property="five" destination="kLo-4x-pgV" id="oOZ-TB-ucb"/>
                 <outlet property="four" destination="7m2-bO-QHW" id="vaN-xA-NUv"/>
                 <outlet property="one" destination="wbv-17-dMI" id="gJk-rn-fkt"/>
                 <outlet property="price" destination="HSd-aS-4Bk" id="r0g-P9-UV6"/>
@@ -114,7 +123,7 @@
                 <outlet property="three" destination="qir-Fw-SXQ" id="Q7i-Wy-9Dn"/>
                 <outlet property="two" destination="n4C-Qm-iV1" id="Ze7-ub-htW"/>
             </connections>
-            <point key="canvasLocation" x="-387" y="-46"/>
+            <point key="canvasLocation" x="-578" y="-77"/>
         </collectionViewCell>
     </objects>
     <resources>

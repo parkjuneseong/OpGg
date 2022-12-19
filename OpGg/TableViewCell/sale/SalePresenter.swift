@@ -35,7 +35,7 @@ extension SalePresenter: CommonTablePresenter {
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 380
+        return 415
         
         
     }
@@ -50,7 +50,7 @@ extension SalePresenter: CommonTablePresenter {
     
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30))
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 75))
             view.headerLabel.numberOfLines = 2
             view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
             view.headerLabel.text = "놓치지 마세요! \n지금 할인중인 스킨 & 챔피언"
@@ -63,7 +63,7 @@ extension SalePresenter: CommonTablePresenter {
     
     var headerHeight: CGFloat {
         get {
-            return 50
+            return 75
         } set {
             _ = newValue
         }
@@ -73,10 +73,8 @@ extension SalePresenter: CommonTablePresenter {
     
     var footerView: UIView? {
         get {
-            let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
-            view.footerLabel.numberOfLines = 2
-            view.footerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
-            view.footerLabel.text = "놓치지 마세요! \n지금 할인중인 스킨 & 챔피언"
+            let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 15))
+      
            
             
             return view
@@ -87,7 +85,7 @@ extension SalePresenter: CommonTablePresenter {
     
     var footerHeight: CGFloat {
         get {
-            return 50
+            return 15
         } set {
             _ = newValue
         }

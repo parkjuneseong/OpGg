@@ -14,7 +14,6 @@ class CommonFooterView: UIView {
     }
     private var containerView = UIView()
     
-    @IBOutlet weak var footerLabel: UILabel!
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -21,6 +21,7 @@ class SaleCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var four: UILabel!
     
     
+    @IBOutlet weak var five: UILabel!
     
     
     func bind(model:SaleModel){
@@ -32,5 +33,6 @@ class SaleCollectionViewCell: UICollectionViewCell {
         two.text = model.two
         three.text = model.three
         four.text = model.four
+        five.text = model.five
     }
 }

@@ -64,6 +64,7 @@ struct SaleModel{
     let two:String
     let three : String
     let four : String
+    let five : String
     
 }
 //struct SaleColModel{

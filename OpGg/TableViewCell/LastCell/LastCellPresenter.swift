@@ -46,7 +46,7 @@ extension LastCellPresenter: CommonTablePresenter {
     
 var headerView: UIView? {
     get {
-        let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30))
+        let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
         view.headerLabel.text = "더 많은 정보 구경하기"
         view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
 
@@ -58,10 +58,30 @@ var headerView: UIView? {
 
 var headerHeight: CGFloat {
     get {
-        return 30
+        return 50
     } set {
         _ = newValue
     }
     }
+    var footerView: UIView? {
+        get {
+            let view = CommonFooterView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 15))
+      
+           
+            
+            return view
+        } set {
+            _ = newValue
+        }
+    }
+    
+    var footerHeight: CGFloat {
+        get {
+            return 15
+        } set {
+            _ = newValue
+        }
+    }
+
 }
 

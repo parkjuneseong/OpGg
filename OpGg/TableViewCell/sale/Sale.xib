@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,10 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U09-Ju-RO1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="c3L-b8-LXi"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="0.0" width="300" height="200"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -133,21 +131,21 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backGroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="U09-Ju-RO1" secondAttribute="trailing" id="39w-mQ-w5q"/>
+                            <constraint firstAttribute="trailing" secondItem="U09-Ju-RO1" secondAttribute="trailing" constant="10" id="39w-mQ-w5q"/>
                             <constraint firstAttribute="bottom" secondItem="kKz-hc-npf" secondAttribute="bottom" id="4Hz-rE-ZmA"/>
+                            <constraint firstItem="U09-Ju-RO1" firstAttribute="top" secondItem="qTy-gJ-b15" secondAttribute="top" id="G3d-FM-JpY"/>
                             <constraint firstItem="kKz-hc-npf" firstAttribute="leading" secondItem="qTy-gJ-b15" secondAttribute="leading" id="K9h-Ow-s3s"/>
                             <constraint firstAttribute="trailing" secondItem="kKz-hc-npf" secondAttribute="trailing" id="KVm-FG-Tks"/>
-                            <constraint firstItem="U09-Ju-RO1" firstAttribute="top" secondItem="qTy-gJ-b15" secondAttribute="top" id="WcW-HD-sgB"/>
                             <constraint firstAttribute="bottom" secondItem="U09-Ju-RO1" secondAttribute="bottom" id="ozr-M0-kxT"/>
                             <constraint firstItem="kKz-hc-npf" firstAttribute="top" secondItem="qTy-gJ-b15" secondAttribute="top" constant="100" id="qde-8T-0D3"/>
-                            <constraint firstItem="U09-Ju-RO1" firstAttribute="leading" secondItem="qTy-gJ-b15" secondAttribute="leading" id="yzf-dQ-yDj"/>
+                            <constraint firstItem="U09-Ju-RO1" firstAttribute="leading" secondItem="qTy-gJ-b15" secondAttribute="leading" constant="10" id="yzf-dQ-yDj"/>
                         </constraints>
                     </view>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="L7a-zg-Usq">
-                        <rect key="frame" x="0.0" y="203" width="320" height="36"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="frame" x="10" y="205" width="300" height="5"/>
+                        <color key="backgroundColor" name="backGroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="6KA-rK-zfi">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -160,7 +158,8 @@
                         </connections>
                     </collectionView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEg-q3-bnv">
-                        <rect key="frame" x="0.0" y="242" width="320" height="35"/>
+                        <rect key="frame" x="10" y="225" width="300" height="35"/>
+                        <color key="backgroundColor" name="krBackground"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="uHZ-kL-g11"/>
                         </constraints>
@@ -178,20 +177,22 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
+                <color key="backgroundColor" name="backGroundColor"/>
                 <constraints>
-                    <constraint firstItem="L7a-zg-Usq" firstAttribute="top" secondItem="qTy-gJ-b15" secondAttribute="bottom" constant="3" id="D48-bz-6ra"/>
+                    <constraint firstItem="L7a-zg-Usq" firstAttribute="top" secondItem="qTy-gJ-b15" secondAttribute="bottom" constant="5" id="D48-bz-6ra"/>
                     <constraint firstItem="qTy-gJ-b15" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Tvt-X3-aHR"/>
                     <constraint firstAttribute="trailing" secondItem="qTy-gJ-b15" secondAttribute="trailing" id="Uii-2N-X3G"/>
-                    <constraint firstAttribute="trailing" secondItem="L7a-zg-Usq" secondAttribute="trailing" id="Xb4-nV-mD5"/>
+                    <constraint firstAttribute="trailing" secondItem="L7a-zg-Usq" secondAttribute="trailing" constant="10" id="Xb4-nV-mD5"/>
                     <constraint firstItem="qTy-gJ-b15" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hU5-9a-tID"/>
-                    <constraint firstAttribute="trailing" secondItem="QEg-q3-bnv" secondAttribute="trailing" id="kWE-u2-D0X"/>
-                    <constraint firstItem="L7a-zg-Usq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oA5-EM-jgJ"/>
-                    <constraint firstAttribute="bottom" secondItem="QEg-q3-bnv" secondAttribute="bottom" constant="3" id="r3v-hd-nrl"/>
-                    <constraint firstItem="QEg-q3-bnv" firstAttribute="top" secondItem="L7a-zg-Usq" secondAttribute="bottom" constant="3" id="u2N-w7-rGR"/>
-                    <constraint firstItem="QEg-q3-bnv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xi1-hX-BQa"/>
+                    <constraint firstAttribute="trailing" secondItem="QEg-q3-bnv" secondAttribute="trailing" constant="10" id="kWE-u2-D0X"/>
+                    <constraint firstItem="L7a-zg-Usq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oA5-EM-jgJ"/>
+                    <constraint firstAttribute="bottom" secondItem="QEg-q3-bnv" secondAttribute="bottom" constant="20" id="r3v-hd-nrl"/>
+                    <constraint firstItem="QEg-q3-bnv" firstAttribute="top" secondItem="L7a-zg-Usq" secondAttribute="bottom" constant="15" id="u2N-w7-rGR"/>
+                    <constraint firstItem="QEg-q3-bnv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xi1-hX-BQa"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backGroundColor"/>
             <connections>
                 <outlet property="discountPrice" destination="B5F-9x-p7K" id="j9r-Qe-kft"/>
                 <outlet property="discountShow" destination="QEg-q3-bnv" id="Doy-DA-SwO"/>
@@ -203,9 +204,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backGroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="krBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
