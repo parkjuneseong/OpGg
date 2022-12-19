@@ -14,9 +14,9 @@ class MyProfile: UITableViewCell {
     @IBOutlet weak var tearImage: UIImageView!
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var gamerTear: UILabel!
-    @IBOutlet weak var closeButton: UIButton!
-    
     @IBOutlet weak var tearPoint: UILabel!
+    @IBOutlet weak var levelLabel: UILabel!
+    
     @IBOutlet weak var moreButton: UIButton!
     @IBOutlet weak var profile: UIView!
     @IBOutlet weak var oddsLabel: UILabel!
@@ -28,6 +28,11 @@ class MyProfile: UITableViewCell {
     @IBOutlet weak var oddsChamp2: UILabel!
     @IBOutlet weak var oddsChamp3: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        
+    }
     
     func bind(model: Cell1Model?) {
         // nil check

@@ -77,6 +77,7 @@ extension SalePresenter: CommonTablePresenter {
             view.footerLabel.numberOfLines = 2
             view.footerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
             view.footerLabel.text = "놓치지 마세요! \n지금 할인중인 스킨 & 챔피언"
+           
             
             return view
         } set {

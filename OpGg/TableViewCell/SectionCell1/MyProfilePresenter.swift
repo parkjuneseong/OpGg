@@ -32,7 +32,7 @@ extension MyProfilePresenter: CommonTablePresenter {
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 230
+        return 280
         
     }
     

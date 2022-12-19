@@ -22,6 +22,8 @@
 		3F012941294B0782006C74A1 /* LastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01293F294B0782006C74A1 /* LastCell.swift */; };
 		3F012942294B0782006C74A1 /* LastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F012940294B0782006C74A1 /* LastCell.xib */; };
 		3F012944294B0793006C74A1 /* LastCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F012943294B0793006C74A1 /* LastCellPresenter.swift */; };
+		3F1657E52950575D002D2627 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E42950575D002D2627 /* PaddingLabel.swift */; };
+		3F1657E729506377002D2627 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E629506377002D2627 /* UIView+Border.swift */; };
 		3F676D98294ED8B5007B4E45 /* CumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D96294ED8B5007B4E45 /* CumView.swift */; };
 		3F676D99294ED8B5007B4E45 /* CumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F676D97294ED8B5007B4E45 /* CumView.xib */; };
 		3F676D9D294ED8D0007B4E45 /* SetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D9B294ED8D0007B4E45 /* SetView.swift */; };
@@ -88,6 +90,8 @@
 		3F01293F294B0782006C74A1 /* LastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCell.swift; sourceTree = "<group>"; };
 		3F012940294B0782006C74A1 /* LastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LastCell.xib; sourceTree = "<group>"; };
 		3F012943294B0793006C74A1 /* LastCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCellPresenter.swift; sourceTree = "<group>"; };
+		3F1657E42950575D002D2627 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaddingLabel.swift; path = ../../../../../Documents/PaddingLabel.swift; sourceTree = "<group>"; };
+		3F1657E629506377002D2627 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		3F676D96294ED8B5007B4E45 /* CumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumView.swift; sourceTree = "<group>"; };
 		3F676D97294ED8B5007B4E45 /* CumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CumView.xib; sourceTree = "<group>"; };
 		3F676D9B294ED8D0007B4E45 /* SetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetView.swift; sourceTree = "<group>"; };
@@ -158,9 +162,11 @@
 				324141432942FE9500C29B9E /* CommonHeaderView.swift */,
 				324141452942FEA100C29B9E /* CommonHeaderView.xib */,
 				3F676D9F294EEE3F007B4E45 /* UIView+Radius.swift */,
+				3F1657E629506377002D2627 /* UIView+Border.swift */,
 				3F676DA1294EEE65007B4E45 /* GrandientView.swift */,
 				3F00DD3F294F0307008E7C6A /* CommonFooterView.swift */,
 				3F00DD41294F0325008E7C6A /* CommonFooterView.xib */,
+				3F1657E42950575D002D2627 /* PaddingLabel.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -510,8 +516,10 @@
 				8CCEA738293DD65500B4299A /* FavoriteCell.swift in Sources */,
 				8C375E5B294604BF00E7F437 /* PatchNoteCell.swift in Sources */,
 				3FDB29B629486FB500BBA4F8 /* FavoriteChampPresenter.swift in Sources */,
+				3F1657E52950575D002D2627 /* PaddingLabel.swift in Sources */,
 				324141402942F2FD00C29B9E /* MyProfilePresenter.swift in Sources */,
 				8C375E5729446C7900E7F437 /* ChampionsView.swift in Sources */,
+				3F1657E729506377002D2627 /* UIView+Border.swift in Sources */,
 				3F01293C294AF58C006C74A1 /* OrderGameCollectionCell.swift in Sources */,
 				8C375E6129460E4500E7F437 /* PatchCollectionCell.swift in Sources */,
 				8C375E292943283E00E7F437 /* SectionCell3Presenter.swift in Sources */,

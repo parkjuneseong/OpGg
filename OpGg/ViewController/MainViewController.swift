@@ -242,4 +242,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         return presenter.headerHeight
     }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        guard let presenter = tablePresenters[section] else {
+            return nil
+        }
+        return presenter.footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        guard let presenter = tablePresenters[section] else {
+            return .leastNormalMagnitude
+        }
+        
+        return presenter.footerHeight
+    }
 }
