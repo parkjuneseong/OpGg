@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Er-3X-dgB">
-                        <rect key="frame" x="5" y="29" width="310" height="20.333333333333329"/>
+                        <rect key="frame" x="10" y="29" width="305" height="20.333333333333329"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,7 +29,7 @@
                         <rect key="frame" x="5" y="8" width="95" height="17"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQD-r1-9Vf">
-                                <rect key="frame" x="0.0" y="0.0" width="95" height="17"/>
+                                <rect key="frame" x="10" y="0.0" width="85" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -40,7 +40,7 @@
                             <constraint firstAttribute="width" constant="95" id="9Qm-An-77X"/>
                             <constraint firstAttribute="trailing" secondItem="iQD-r1-9Vf" secondAttribute="trailing" id="XEj-MH-kUu"/>
                             <constraint firstAttribute="bottom" secondItem="iQD-r1-9Vf" secondAttribute="bottom" id="lPE-kl-rsK"/>
-                            <constraint firstItem="iQD-r1-9Vf" firstAttribute="leading" secondItem="q0E-VM-IWP" secondAttribute="leading" id="onc-DF-dE7"/>
+                            <constraint firstItem="iQD-r1-9Vf" firstAttribute="leading" secondItem="q0E-VM-IWP" secondAttribute="leading" constant="10" id="onc-DF-dE7"/>
                             <constraint firstItem="iQD-r1-9Vf" firstAttribute="top" secondItem="q0E-VM-IWP" secondAttribute="top" id="zW2-T6-S2L"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -55,7 +55,7 @@
                     <constraint firstItem="3Er-3X-dgB" firstAttribute="top" secondItem="q0E-VM-IWP" secondAttribute="bottom" constant="4" id="1SB-dg-bhe"/>
                     <constraint firstAttribute="trailing" secondItem="3Er-3X-dgB" secondAttribute="trailing" constant="5" id="Erq-d2-rbh"/>
                     <constraint firstItem="q0E-VM-IWP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WeZ-9B-fWy"/>
-                    <constraint firstItem="3Er-3X-dgB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="XBC-1y-nKQ"/>
+                    <constraint firstItem="3Er-3X-dgB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XBC-1y-nKQ"/>
                     <constraint firstItem="q0E-VM-IWP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="x0U-QE-iQn"/>
                 </constraints>
             </tableViewCellContentView>

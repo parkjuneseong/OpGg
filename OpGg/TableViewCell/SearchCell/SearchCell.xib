@@ -18,10 +18,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" id="MRb-P8-feV" userLabel="searchView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iht-iV-Jgt" userLabel="searchView" customClass="UIControl">
                         <rect key="frame" x="10" y="0.0" width="300" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0V-IU-UxR">
+                                <rect key="frame" x="55" y="19.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="krLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-Tr-cdd">
                                 <rect key="frame" x="10" y="10" width="40" height="40"/>
                                 <constraints>
@@ -29,24 +34,36 @@
                                     <constraint firstAttribute="height" constant="40" id="tqi-Ak-aPS"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0V-IU-UxR">
-                                <rect key="frame" x="55" y="19.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" name="krLabelColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="wKU-bM-4HA"/>
+                        <color key="backgroundColor" name="backGroundColor"/>
                         <constraints>
-                            <constraint firstItem="n0V-IU-UxR" firstAttribute="centerY" secondItem="MRb-P8-feV" secondAttribute="centerY" id="0w4-Ak-NZL"/>
-                            <constraint firstItem="n0V-IU-UxR" firstAttribute="leading" secondItem="MyO-Tr-cdd" secondAttribute="trailing" constant="5" id="8o5-6h-ZEZ"/>
-                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="leading" secondItem="MRb-P8-feV" secondAttribute="leading" constant="10" id="AB1-47-Vq2"/>
-                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="centerY" secondItem="MRb-P8-feV" secondAttribute="centerY" id="UgP-fJ-h0n"/>
+                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="centerY" secondItem="Iht-iV-Jgt" secondAttribute="centerY" id="K0r-SI-z6F"/>
+                            <constraint firstItem="n0V-IU-UxR" firstAttribute="leading" secondItem="MyO-Tr-cdd" secondAttribute="trailing" constant="5" id="Zyw-Rk-u0o"/>
+                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="leading" secondItem="Iht-iV-Jgt" secondAttribute="leading" constant="10" id="um9-SB-NNG"/>
+                            <constraint firstItem="n0V-IU-UxR" firstAttribute="centerY" secondItem="Iht-iV-Jgt" secondAttribute="centerY" id="v84-af-mGX"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="lastCellColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="6Ra-ml-BNX"/>
                 <color key="backgroundColor" name="backGroundColor"/>
+                <constraints>
+                    <constraint firstItem="Iht-iV-Jgt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="27B-LY-xD0"/>
+                    <constraint firstItem="Iht-iV-Jgt" firstAttribute="leading" secondItem="6Ra-ml-BNX" secondAttribute="leading" constant="10" id="KLv-24-D5R"/>
+                    <constraint firstItem="6Ra-ml-BNX" firstAttribute="trailing" secondItem="Iht-iV-Jgt" secondAttribute="trailing" constant="10" id="Ldb-zM-842"/>
+                    <constraint firstAttribute="bottom" secondItem="Iht-iV-Jgt" secondAttribute="bottom" id="MKf-PI-RgR"/>
+                </constraints>
                 <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
                 </userDefinedRuntimeAttributes>
@@ -58,8 +75,9 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="search" destination="n0V-IU-UxR" id="S8o-WA-Ifg"/>
+                <outlet property="searchView" destination="Iht-iV-Jgt" id="Jqm-cO-NGb"/>
             </connections>
-            <point key="canvasLocation" x="84" y="74"/>
+            <point key="canvasLocation" x="3" y="66"/>
         </tableViewCell>
     </objects>
     <resources>
@@ -68,6 +86,9 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="krLabelColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lastCellColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

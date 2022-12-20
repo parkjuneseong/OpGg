@@ -32,7 +32,7 @@ extension AdvertiseCellPresenter: CommonTablePresenter {
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
     
     func numberOfRows(in section: Int) -> Int {

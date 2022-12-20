@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,28 +19,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2X-XB-iFI">
-                        <rect key="frame" x="3" y="3" width="40" height="40"/>
+                        <rect key="frame" x="10" y="3" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="75k-DD-PHQ"/>
                             <constraint firstAttribute="height" constant="40" id="f14-fe-vuf"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZomBiod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6T-f0-Ili">
-                        <rect key="frame" x="46" y="3" width="264" height="20"/>
+                        <rect key="frame" x="53" y="3" width="257" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survive from zombies!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8R-rf-CtM">
-                        <rect key="frame" x="46" y="24" width="264" height="20"/>
+                        <rect key="frame" x="53" y="24" width="257" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFN-5g-cQ5">
-                        <rect key="frame" x="3" y="45" width="314" height="33"/>
+                        <rect key="frame" x="10" y="53" width="300" height="25"/>
                         <color key="backgroundColor" name="buttonColor2"/>
-                        <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                        <color key="tintColor" name="krLabelColor"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="게임 플레이"/>
                         <userDefinedRuntimeAttributes>
@@ -55,13 +54,13 @@
                 <constraints>
                     <constraint firstItem="E6T-f0-Ili" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="7Uc-MV-vwh"/>
                     <constraint firstItem="E6T-f0-Ili" firstAttribute="leading" secondItem="Z2X-XB-iFI" secondAttribute="trailing" constant="3" id="B2p-RF-9FO"/>
-                    <constraint firstItem="ZFN-5g-cQ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="Gm1-hu-l4S"/>
+                    <constraint firstItem="ZFN-5g-cQ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Gm1-hu-l4S"/>
                     <constraint firstAttribute="trailing" secondItem="E6T-f0-Ili" secondAttribute="trailing" constant="10" id="M7s-ZH-2tZ"/>
-                    <constraint firstItem="Z2X-XB-iFI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="UcD-GI-b7o"/>
-                    <constraint firstAttribute="trailing" secondItem="ZFN-5g-cQ5" secondAttribute="trailing" constant="3" id="dSS-Tn-aCB"/>
+                    <constraint firstItem="Z2X-XB-iFI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UcD-GI-b7o"/>
+                    <constraint firstAttribute="trailing" secondItem="ZFN-5g-cQ5" secondAttribute="trailing" constant="10" id="dSS-Tn-aCB"/>
                     <constraint firstItem="R8R-rf-CtM" firstAttribute="leading" secondItem="Z2X-XB-iFI" secondAttribute="trailing" constant="3" id="e4r-K9-ZbC"/>
                     <constraint firstAttribute="trailing" secondItem="R8R-rf-CtM" secondAttribute="trailing" constant="10" id="gKw-Qq-gUL"/>
-                    <constraint firstItem="ZFN-5g-cQ5" firstAttribute="top" secondItem="Z2X-XB-iFI" secondAttribute="bottom" constant="2" id="jvo-qU-2Fe"/>
+                    <constraint firstItem="ZFN-5g-cQ5" firstAttribute="top" secondItem="Z2X-XB-iFI" secondAttribute="bottom" constant="10" id="jvo-qU-2Fe"/>
                     <constraint firstItem="Z2X-XB-iFI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="lfv-RL-nSK"/>
                     <constraint firstAttribute="bottom" secondItem="ZFN-5g-cQ5" secondAttribute="bottom" constant="2" id="p5U-du-UFk"/>
                     <constraint firstItem="R8R-rf-CtM" firstAttribute="top" secondItem="E6T-f0-Ili" secondAttribute="bottom" constant="1" id="wzF-k3-AqX"/>
@@ -85,8 +84,8 @@
         <namedColor name="buttonColor2">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="krLabelColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

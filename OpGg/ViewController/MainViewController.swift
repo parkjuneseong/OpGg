@@ -197,11 +197,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     }
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-      return 0
-    }
+extension MainViewController: UITableViewDelegate, UITableViewDataSource{
   
     
     func numberOfSections(in tableView: UITableView) -> Int {

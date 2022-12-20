@@ -10,6 +10,7 @@ import UIKit
 class SearchCell: UITableViewCell {
     @IBOutlet weak var search: UILabel!
     
+    @IBOutlet weak var searchView: UIControl!
     
     func bind(model: Cell4Model?) {
         // nil check

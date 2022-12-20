@@ -41,7 +41,7 @@ extension PatchNoteCellPresenter: CommonTablePresenter {
 
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 70))
             view.headerLabel.text = "패치노트"
             view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
             return view
@@ -52,7 +52,7 @@ extension PatchNoteCellPresenter: CommonTablePresenter {
 
     var headerHeight: CGFloat {
         get {
-            return 50
+            return 70
         } set {
             _ = newValue
         }

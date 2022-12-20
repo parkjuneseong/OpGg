@@ -206,29 +206,29 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1s-cv-3eI">
-                                <rect key="frame" x="90" y="20" width="184" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="90" y="5" width="184" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="textColor" name="customBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yZH-0E-hZY">
-                                <rect key="frame" x="90" y="42" width="86" height="15"/>
+                                <rect key="frame" x="93" y="42" width="111" height="15"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2Z-JC-3Iu">
-                                        <rect key="frame" x="0.0" y="0.0" width="26.5" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="9"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                                         <color key="textColor" name="krLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tearImage" translatesAutoresizingMaskIntoConstraints="NO" id="0ti-I6-LgA">
-                                        <rect key="frame" x="31.5" y="0.0" width="17" height="15"/>
+                                        <rect key="frame" x="44" y="0.0" width="17" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="17" id="BzT-uM-EDT"/>
                                             <constraint firstAttribute="height" constant="15" id="XOf-gL-kb8"/>
                                         </constraints>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhZ-l3-fEl">
-                                        <rect key="frame" x="53.5" y="1.5" width="1" height="12"/>
+                                        <rect key="frame" x="66" y="1.5" width="1" height="12"/>
                                         <color key="backgroundColor" name="krBackground"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="1" id="NOr-Zl-oPU"/>
@@ -236,8 +236,8 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdQ-Vw-tif">
-                                        <rect key="frame" x="59.5" y="0.0" width="26.5" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="9"/>
+                                        <rect key="frame" x="72" y="0.0" width="39" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                                         <color key="textColor" name="krLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -250,8 +250,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="a1s-cv-3eI" firstAttribute="top" secondItem="s3L-lc-Vkh" secondAttribute="top" constant="20" id="0V3-3H-Kko"/>
+                            <constraint firstItem="a1s-cv-3eI" firstAttribute="top" secondItem="s3L-lc-Vkh" secondAttribute="top" constant="5" id="0V3-3H-Kko"/>
                             <constraint firstItem="rk8-Qe-PDo" firstAttribute="top" secondItem="s3L-lc-Vkh" secondAttribute="top" id="485-eE-7Ka"/>
+                            <constraint firstItem="yZH-0E-hZY" firstAttribute="top" secondItem="a1s-cv-3eI" secondAttribute="bottom" constant="8" id="9eN-KR-v11"/>
                             <constraint firstItem="cCS-8f-Lgl" firstAttribute="leading" secondItem="a1s-cv-3eI" secondAttribute="trailing" constant="10" id="Ktg-jJ-NSw"/>
                             <constraint firstItem="cCS-8f-Lgl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yZH-0E-hZY" secondAttribute="trailing" constant="10" id="Sim-bY-VSM"/>
                             <constraint firstAttribute="trailing" secondItem="cCS-8f-Lgl" secondAttribute="trailing" constant="10" id="T0X-cK-4b8"/>
@@ -260,7 +261,7 @@
                             <constraint firstItem="cCS-8f-Lgl" firstAttribute="centerY" secondItem="s3L-lc-Vkh" secondAttribute="centerY" id="cEB-5P-c6l"/>
                             <constraint firstAttribute="bottom" secondItem="yZH-0E-hZY" secondAttribute="bottom" constant="13" id="dgG-Hv-Bjd"/>
                             <constraint firstItem="rk8-Qe-PDo" firstAttribute="leading" secondItem="s3L-lc-Vkh" secondAttribute="leading" constant="10" id="pb4-AA-2qM"/>
-                            <constraint firstItem="yZH-0E-hZY" firstAttribute="leading" secondItem="rk8-Qe-PDo" secondAttribute="trailing" constant="10" id="v4c-XP-pXi"/>
+                            <constraint firstItem="yZH-0E-hZY" firstAttribute="leading" secondItem="rk8-Qe-PDo" secondAttribute="trailing" constant="13" id="v4c-XP-pXi"/>
                             <constraint firstAttribute="bottom" secondItem="rk8-Qe-PDo" secondAttribute="bottom" id="xlx-jh-0Ak"/>
                         </constraints>
                     </view>

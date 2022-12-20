@@ -65,7 +65,7 @@ extension FavoriteCellPresenter: CommonTablePresenter {
         get {
             let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
             view.headerLabel.text = ""
-           
+            
             return view
         } set {
             _ = newValue
