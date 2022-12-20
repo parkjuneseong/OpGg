@@ -24,6 +24,9 @@ class OrderGame: UITableViewCell {
 }
 
 extension OrderGame: UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+          return 0
+        }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataList.count
     }

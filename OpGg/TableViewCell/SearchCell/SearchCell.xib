@@ -12,42 +12,62 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SearchCell" customModule="op_gg" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ssg-yc-jOj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <color key="backgroundColor" name="backGroundColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                    <view contentMode="scaleToFill" id="MRb-P8-feV" userLabel="searchView">
+                        <rect key="frame" x="10" y="0.0" width="300" height="60"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="MyO-Tr-cdd">
+                                <rect key="frame" x="10" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="iRW-9L-u5L"/>
+                                    <constraint firstAttribute="height" constant="40" id="tqi-Ak-aPS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0V-IU-UxR">
+                                <rect key="frame" x="55" y="19.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="krLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wKU-bM-4HA"/>
+                        <constraints>
+                            <constraint firstItem="n0V-IU-UxR" firstAttribute="centerY" secondItem="MRb-P8-feV" secondAttribute="centerY" id="0w4-Ak-NZL"/>
+                            <constraint firstItem="n0V-IU-UxR" firstAttribute="leading" secondItem="MyO-Tr-cdd" secondAttribute="trailing" constant="5" id="8o5-6h-ZEZ"/>
+                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="leading" secondItem="MRb-P8-feV" secondAttribute="leading" constant="10" id="AB1-47-Vq2"/>
+                            <constraint firstItem="MyO-Tr-cdd" firstAttribute="centerY" secondItem="MRb-P8-feV" secondAttribute="centerY" id="UgP-fJ-h0n"/>
+                        </constraints>
+                    </view>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="Ssg-yc-jOj" secondAttribute="bottom" id="Jyd-GT-0hc"/>
-                    <constraint firstItem="Ssg-yc-jOj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QD5-Bw-3eD"/>
-                    <constraint firstItem="Ssg-yc-jOj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WhP-pW-ga8"/>
-                    <constraint firstAttribute="trailing" secondItem="Ssg-yc-jOj" secondAttribute="trailing" id="cQ7-Tt-YGS"/>
-                </constraints>
+                <viewLayoutGuide key="safeArea" id="6Ra-ml-BNX"/>
+                <color key="backgroundColor" name="backGroundColor"/>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" name="backGroundColor"/>
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
-                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="5"/>
-                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="search" destination="Ssg-yc-jOj" id="5oU-Q0-K11"/>
+                <outlet property="search" destination="n0V-IU-UxR" id="S8o-WA-Ifg"/>
             </connections>
-            <point key="canvasLocation" x="139" y="74"/>
+            <point key="canvasLocation" x="84" y="74"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="search" width="45" height="49"/>
         <namedColor name="backGroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="krLabelColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>

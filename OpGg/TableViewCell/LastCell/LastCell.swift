@@ -9,16 +9,16 @@ import UIKit
 
 class LastCell: UITableViewCell {
    
-    @IBOutlet weak var pro: UIButton!
-    @IBOutlet weak var ranking: UIButton!
+    @IBOutlet weak var pro: UILabel!
+    @IBOutlet weak var ranking: UILabel!
  
     
     func bind(model:LastModel?){
         guard let model = model else{
             return
         }
-        pro.setTitle(model.pro, for: .normal)
-        ranking.setTitle(model.ranking, for: .normal)
+        pro.text = model.pro
+        ranking.text = model.ranking
         
     }
     

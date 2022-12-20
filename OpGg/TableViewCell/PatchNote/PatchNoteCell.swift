@@ -28,6 +28,9 @@ extension PatchNoteCell: UICollectionViewDelegate, UICollectionViewDataSource,UI
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataList.count
     }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//      return 0
+//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PatchCollectionCell", for: indexPath as IndexPath) as? PatchCollectionCell

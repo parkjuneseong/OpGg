@@ -14,6 +14,7 @@ class Sale: UITableViewCell {
     @IBOutlet weak var during: UILabel!
     @IBOutlet weak var discountPrice: UILabel!
     @IBOutlet weak var salecollectionView: UICollectionView!
+    @IBOutlet weak var price2: UILabel!
     var dataList : [SaleModel] = [] {
         didSet {
             salecollectionView.reloadData()
@@ -28,6 +29,7 @@ class Sale: UITableViewCell {
         saleImage.image = model.saleImage
         during.text = model.during
         discountPrice.text = model.discountPrice
+        price2.attributedText = model.price2.strikeThrough()
         
     }
 

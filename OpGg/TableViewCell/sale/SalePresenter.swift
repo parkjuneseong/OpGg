@@ -52,7 +52,7 @@ extension SalePresenter: CommonTablePresenter {
         get {
             let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 75))
             view.headerLabel.numberOfLines = 2
-            view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+            view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
             view.headerLabel.text = "놓치지 마세요! \n지금 할인중인 스킨 & 챔피언"
             
             return view

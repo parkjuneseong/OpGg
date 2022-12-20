@@ -28,7 +28,7 @@ extension SearchCellPresenter: CommonTablePresenter {
     }
     
     func height(at indexPath: IndexPath) -> CGFloat {
-        return 45
+        return 60
     }
     
     func numberOfRows(in section: Int) -> Int {
@@ -51,6 +51,23 @@ extension SearchCellPresenter: CommonTablePresenter {
     var footerHeight: CGFloat {
         get {
             return 15
+        } set {
+            _ = newValue
+        }
+    }
+    var headerView: UIView? {
+        get {
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+            view.headerLabel.text = ""
+            return view
+        } set {
+            _ = newValue
+        }
+    }
+
+    var headerHeight: CGFloat {
+        get {
+            return 50
         } set {
             _ = newValue
         }

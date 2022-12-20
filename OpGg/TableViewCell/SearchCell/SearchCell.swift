@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchCell: UITableViewCell {
-    @IBOutlet weak var search: UITextField!
+    @IBOutlet weak var search: UILabel!
     
     
     func bind(model: Cell4Model?) {

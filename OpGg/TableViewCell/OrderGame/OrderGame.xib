@@ -4,8 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,9 +19,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="s0i-6G-fjU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="65m-Pw-M4T">
+                        <rect key="frame" x="10" y="0.0" width="310" height="200"/>
+                        <color key="backgroundColor" name="backGroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="65m-Pw-M4T">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -36,7 +36,7 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="s0i-6G-fjU" secondAttribute="trailing" id="F3G-QS-grK"/>
                     <constraint firstAttribute="bottom" secondItem="s0i-6G-fjU" secondAttribute="bottom" id="FHw-Ry-97A"/>
-                    <constraint firstItem="s0i-6G-fjU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dQc-F4-32W"/>
+                    <constraint firstItem="s0i-6G-fjU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dQc-F4-32W"/>
                     <constraint firstItem="s0i-6G-fjU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lEa-Wr-zWi"/>
                 </constraints>
             </tableViewCellContentView>
@@ -48,8 +48,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="backGroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

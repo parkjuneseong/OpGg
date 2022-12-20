@@ -47,7 +47,7 @@ extension ChampionTearCellPresenter: CommonTablePresenter {
         get {
             let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
             view.headerLabel.text = "챔피언 티어"
-            view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 17.0)
+            view.headerLabel.font = UIFont(name:"HelveticaNeue-Bold", size: 20.0)
             return view
         } set {
             _ = newValue

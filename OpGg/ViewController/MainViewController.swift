@@ -75,13 +75,13 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     
     // Cell3
     let cell3Model = Cell3Model(
-        changeOrder: "순서 변경❕",
+        changeOrder: "순서 변경",
         gamerList: "★즐겨찾기한 소환사가 없습니다.\n 소환사를 검색한 후 등록해주세요!",
         searchGamer: "소환사 검색하기",
         gamerName: "즐겨찾기한 소환사")
     //Cell4
     let cell4Model = Cell4Model(
-        search: "🔍 소환사 검색")
+        search: "소환사 검색")
     
     //PatchNoteCell
     var patchNoteList : [PatchModel] = []
@@ -104,7 +104,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     var orderGameList : [OrderModel] = []
     
     //LastCell
-    let lastCellModel = LastModel(pro:"📹  프로 관전                                                                 >",ranking: "👑  랭킹                                                                         >")
+    let lastCellModel = LastModel(pro:"프로 관전",ranking: "랭킹")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -140,10 +140,10 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
         orderGameList.append(ordergameMode4)
     }
     private func setSaleModel(){
-        let saleModel = SaleModel(saleImage: UIImage(named:"saleTitle") ?? UIImage(), discountShow: "모두 보기", during: "~12.19", discountPrice: "560RP", salecolImage: UIImage(named:"saleChamp1") ?? UIImage(), price: "975RP", one:"Champion",two:"조이",three:"60%",four:"390RP",five: "~12.19")
-        let saleModel2 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp2") ?? UIImage(), price: "1350RP",one:"Skin",two: "어둠의인도자 야스오",three:"60%",four:"975RP",five: "~12.24")
-        let saleModel3 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp3") ?? UIImage(), price:"580RP",one: "Champion",two: "그라가스", three: "75%",four: "190RP",five: "~12.31")
-        let saleModel4 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp4") ?? UIImage(), price:"1680RP",one: "Skin",two: "3D카이사",three:"10%",four: "1520RP",five:"~12.31")
+        let saleModel = SaleModel(saleImage: UIImage(named:"saleTitle") ?? UIImage(), discountShow: "모두 보기", during: "~12.19", discountPrice: "560RP", salecolImage: UIImage(named:"saleChamp1") ?? UIImage(), price: "975RP", one:"Champion",two:"조이",three:"60%",four:"390RP",five: "~12.19", price2: "270RP")
+        let saleModel2 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp2") ?? UIImage(), price: "1350RP",one:"Skin",two: "어둠의인도자 야스오",three:"60%",four:"975RP",five: "~12.24", price2: "")
+        let saleModel3 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp3") ?? UIImage(), price:"580RP",one: "Champion",two: "그라가스", three: "75%",four: "190RP",five: "~12.31", price2: "")
+        let saleModel4 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp4") ?? UIImage(), price:"1680RP",one: "Skin",two: "3D카이사",three:"10%",four: "1520RP",five:"~12.31", price2: "")
                                    
         
         saleList.append(saleModel)
@@ -197,7 +197,13 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     }
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource,UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+      return 0
+    }
+  
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         tablePresenters.count
     }
