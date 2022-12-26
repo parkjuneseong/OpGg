@@ -29,9 +29,7 @@ class MyProfile: UITableViewCell {
     @IBOutlet weak var oddsChamp3: UILabel!
     
     override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        
+        super.awakeFromNib()        
     }
     
     func bind(model: Cell1Model?) {

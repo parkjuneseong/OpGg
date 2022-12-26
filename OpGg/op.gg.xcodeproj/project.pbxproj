@@ -24,7 +24,13 @@
 		3F012944294B0793006C74A1 /* LastCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F012943294B0793006C74A1 /* LastCellPresenter.swift */; };
 		3F1657E729506377002D2627 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E629506377002D2627 /* UIView+Border.swift */; };
 		3F1657E929506679002D2627 /* String+MiddleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E829506679002D2627 /* String+MiddleLine.swift */; };
-		3F4CB4DF29519C040012791A /* CellLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CB4DE29519C040012791A /* CellLine.swift */; };
+		3F3CF3FD29532D2700500B1E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CF3FB29532D2700500B1E /* SearchView.swift */; };
+		3F3CF3FE29532D2700500B1E /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3CF3FC29532D2700500B1E /* SearchView.xib */; };
+		3F45197B29558DBA002C1068 /* DelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45197A29558DBA002C1068 /* DelegateProtocol.swift */; };
+		3F4944EC295978590094AC0A /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4944EA295978590094AC0A /* SearchViewCell.swift */; };
+		3F4944ED295978590094AC0A /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F4944EB295978590094AC0A /* SearchViewCell.xib */; };
+		3F4944EF29597E3D0094AC0A /* CommonSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4944EE29597E3D0094AC0A /* CommonSearchHeaderView.swift */; };
+		3F4944F129597E4D0094AC0A /* CommonSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F4944F029597E4D0094AC0A /* CommonSearchHeaderView.xib */; };
 		3F4CB4E12951A3CA0012791A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4CB4E02951A3CA0012791A /* PaddingLabel.swift */; };
 		3F676D98294ED8B5007B4E45 /* CumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D96294ED8B5007B4E45 /* CumView.swift */; };
 		3F676D99294ED8B5007B4E45 /* CumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F676D97294ED8B5007B4E45 /* CumView.xib */; };
@@ -94,7 +100,13 @@
 		3F012943294B0793006C74A1 /* LastCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastCellPresenter.swift; sourceTree = "<group>"; };
 		3F1657E629506377002D2627 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		3F1657E829506679002D2627 /* String+MiddleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MiddleLine.swift"; sourceTree = "<group>"; };
-		3F4CB4DE29519C040012791A /* CellLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLine.swift; sourceTree = "<group>"; };
+		3F3CF3FB29532D2700500B1E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3F3CF3FC29532D2700500B1E /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		3F45197A29558DBA002C1068 /* DelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocol.swift; sourceTree = "<group>"; };
+		3F4944EA295978590094AC0A /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		3F4944EB295978590094AC0A /* SearchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
+		3F4944EE29597E3D0094AC0A /* CommonSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSearchHeaderView.swift; sourceTree = "<group>"; };
+		3F4944F029597E4D0094AC0A /* CommonSearchHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonSearchHeaderView.xib; sourceTree = "<group>"; };
 		3F4CB4E02951A3CA0012791A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		3F676D96294ED8B5007B4E45 /* CumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumView.swift; sourceTree = "<group>"; };
 		3F676D97294ED8B5007B4E45 /* CumView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CumView.xib; sourceTree = "<group>"; };
@@ -171,8 +183,8 @@
 				3F00DD3F294F0307008E7C6A /* CommonFooterView.swift */,
 				3F00DD41294F0325008E7C6A /* CommonFooterView.xib */,
 				3F1657E829506679002D2627 /* String+MiddleLine.swift */,
-				3F4CB4DE29519C040012791A /* CellLine.swift */,
 				3F4CB4E02951A3CA0012791A /* PaddingLabel.swift */,
+				3F45197A29558DBA002C1068 /* DelegateProtocol.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -256,6 +268,19 @@
 				3F676D95294ED887007B4E45 /* CumView */,
 			);
 			path = EsportView;
+			sourceTree = "<group>";
+		};
+		3F9D310B2959780F00F24340 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3F3CF3FB29532D2700500B1E /* SearchView.swift */,
+				3F3CF3FC29532D2700500B1E /* SearchView.xib */,
+				3F4944EA295978590094AC0A /* SearchViewCell.swift */,
+				3F4944EB295978590094AC0A /* SearchViewCell.xib */,
+				3F4944EE29597E3D0094AC0A /* CommonSearchHeaderView.swift */,
+				3F4944F029597E4D0094AC0A /* CommonSearchHeaderView.xib */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		3FDB29A82948687C00BBA4F8 /* PatchNote */ = {
@@ -343,6 +368,7 @@
 		8CA03F2D2939E76500EC9F34 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F9D310B2959780F00F24340 /* SearchView */,
 				8CA03F2F2939E7D800EC9F34 /* MainViewController.swift */,
 				8C2DDD59293A3E7200DA19C4 /* MainViewController.xib */,
 				8C375E52294468D600E7F437 /* TabBarController.swift */,
@@ -460,6 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F4944ED295978590094AC0A /* SearchViewCell.xib in Resources */,
 				3FDB29BB2948763400BBA4F8 /* TmiCell.xib in Resources */,
 				3FDB29C229487CE900BBA4F8 /* Sale.xib in Resources */,
 				324141462942FEA100C29B9E /* CommonHeaderView.xib in Resources */,
@@ -468,6 +495,7 @@
 				8CCEA739293DD65500B4299A /* FavoriteCell.xib in Resources */,
 				3F012942294B0782006C74A1 /* LastCell.xib in Resources */,
 				3F01293D294AF58C006C74A1 /* OrderGameCollectionCell.xib in Resources */,
+				3F3CF3FE29532D2700500B1E /* SearchView.xib in Resources */,
 				8C375E6229460E4500E7F437 /* PatchCollectionCell.xib in Resources */,
 				3FDB29C829487F7F00BBA4F8 /* SaleCollectionViewCell.xib in Resources */,
 				3FDB29AD2948691900BBA4F8 /* ChampionTearCell.xib in Resources */,
@@ -480,6 +508,7 @@
 				8C375E49294340BE00E7F437 /* SearchCell.xib in Resources */,
 				8C2DDD5A293A3E7200DA19C4 /* MainViewController.xib in Resources */,
 				8C375E5C294604BF00E7F437 /* PatchNoteCell.xib in Resources */,
+				3F4944F129597E4D0094AC0A /* CommonSearchHeaderView.xib in Resources */,
 				3F012937294AF51F006C74A1 /* OrderGame.xib in Resources */,
 				8CA112692935FB450086B021 /* Assets.xcassets in Resources */,
 				3F81B34B294ED2DB005A55CE /* EsportView.xib in Resources */,
@@ -498,11 +527,12 @@
 				8CA03F312939E7D800EC9F34 /* MainViewController.swift in Sources */,
 				3FDB29BD2948764000BBA4F8 /* TmiCellPresenter.swift in Sources */,
 				8C375E5E2946055400E7F437 /* PatchNoteCellPresenter.swift in Sources */,
-				3F4CB4DF29519C040012791A /* CellLine.swift in Sources */,
 				324141442942FE9500C29B9E /* CommonHeaderView.swift in Sources */,
 				8C375E48294340BE00E7F437 /* SearchCell.swift in Sources */,
 				8C6BEDD5293F8B310004D98D /* SettingCell.swift in Sources */,
+				3F4944EF29597E3D0094AC0A /* CommonSearchHeaderView.swift in Sources */,
 				8CCEA73C293DE7EA00B4299A /* MyProfile.swift in Sources */,
+				3F3CF3FD29532D2700500B1E /* SearchView.swift in Sources */,
 				8C375E512944680300E7F437 /* SenceDelegate.swift in Sources */,
 				3FDB29C729487F7F00BBA4F8 /* SaleCollectionViewCell.swift in Sources */,
 				3FDB29C129487CE900BBA4F8 /* Sale.swift in Sources */,
@@ -523,7 +553,9 @@
 				3F1657E929506679002D2627 /* String+MiddleLine.swift in Sources */,
 				8CCEA738293DD65500B4299A /* FavoriteCell.swift in Sources */,
 				8C375E5B294604BF00E7F437 /* PatchNoteCell.swift in Sources */,
+				3F4944EC295978590094AC0A /* SearchViewCell.swift in Sources */,
 				3FDB29B629486FB500BBA4F8 /* FavoriteChampPresenter.swift in Sources */,
+				3F45197B29558DBA002C1068 /* DelegateProtocol.swift in Sources */,
 				324141402942F2FD00C29B9E /* MyProfilePresenter.swift in Sources */,
 				3F4CB4E12951A3CA0012791A /* PaddingLabel.swift in Sources */,
 				8C375E5729446C7900E7F437 /* ChampionsView.swift in Sources */,

@@ -9,12 +9,12 @@
 import UIKit
 import SwiftUI
 
-class MainViewController: UIViewController, UITabBarControllerDelegate {
+class MainViewController: UIViewController, UITabBarControllerDelegate{
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var opggimage: UIImageView!
     //    @IBOutlet weak var tabbar: UITabBar!
     @IBOutlet weak var tableView: UITableView!
-    
+//    let button = UIButton()
     //tabbarController
     
     //버튼을 눌렀을떄 실행되는 액션함수
@@ -34,7 +34,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     //    required init?(coder: NSCoder) {
     //        fatalError("init(coder:) has not been implemented")
     //    }
-    
+   
     // MARK: - Presenters
     private var tablePresenters: [CommonTablePresenter?] = []
     private let sectionCell1Presenter = MyProfilePresenter()
@@ -76,7 +76,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     // Cell3
     let cell3Model = Cell3Model(
         changeOrder: "순서 변경",
-        gamerList: "★즐겨찾기한 소환사가 없습니다.\n 소환사를 검색한 후 등록해주세요!",
+        gamerList: "소환사를 검색한 후 등록해주세요!",
         searchGamer: "소환사 검색하기",
         gamerName: "즐겨찾기한 소환사")
     //Cell4
@@ -90,16 +90,14 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     )
     
     let favoriteChampModel = FavoriteChampModel(
-        championsLabel:"★즐겨찾기한 소환사가 없습니다. \n즐겨찾는 챔피언을 등록해주세요!",
+        championsLabel:"즐겨찾는 챔피언을 등록해주세요!",
         championsList:"즐겨찾기한 챔피언"
     )
     //tmiCell
     let tmiModel = TmiModel(todayTmi: "😁오늘의 TMI", tmi: "OP.GG 영어 번역자가 가장 좋아하는 챔피언은 룰루 입니다.")
     //SaleCell
     var saleList : [SaleModel] = []
-    
-        //SaleCellbind
-   // let saleModel = SaleColModel(price: "d", salecolImage: UIImage(named:"saleImage2") ?? UIImage())
+
     //orderGame
     var orderGameList : [OrderModel] = []
     
@@ -108,6 +106,14 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        button.setTitle("소환사 검색", for: .normal)
+//        view.addSubview(button)
+//        button.backgroundColor = .black
+//        button.frame = CGRect(x: 110, y: 110, width: 150, height: 20)
+//        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+//
+//        tableView.backgroundColor = .systemRed
+        
         opggimage.image = UIImage(named:"opgg")
         
         setorderGameModel()
@@ -197,7 +203,9 @@ class MainViewController: UIViewController, UITabBarControllerDelegate {
     }
 }
 
+
 extension MainViewController: UITableViewDelegate, UITableViewDataSource{
+
   
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -259,4 +267,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         
         return presenter.footerHeight
     }
+    
+//    @objc private func didTapButton(){
+//        let rootVC = SearchView()
+//        let naVC = UINavigationController(rootViewController: rootVC)
+////        naVC = modalPresentationStyle = .fullScreen
+//        present(naVC.self,animated: true)
+//    }
 }

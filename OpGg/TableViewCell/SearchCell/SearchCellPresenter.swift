@@ -57,7 +57,7 @@ extension SearchCellPresenter: CommonTablePresenter {
     }
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
             view.headerLabel.text = ""
             return view
         } set {
@@ -67,7 +67,7 @@ extension SearchCellPresenter: CommonTablePresenter {
 
     var headerHeight: CGFloat {
         get {
-            return 50
+            return 20
         } set {
             _ = newValue
         }

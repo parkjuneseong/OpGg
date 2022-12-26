@@ -7,7 +7,7 @@ import UIKit
             guard let windowScene = (scene as? UIWindowScene) else { return }
             
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = TabBarViewController() // 자신의 시작 ViewController
+            window.rootViewController = SearchView() // 자신의 시작 ViewController
             window.makeKeyAndVisible()
             self.window = window
         }

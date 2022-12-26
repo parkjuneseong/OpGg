@@ -43,9 +43,6 @@
                             <constraint firstItem="n0V-IU-UxR" firstAttribute="centerY" secondItem="Iht-iV-Jgt" secondAttribute="centerY" id="v84-af-mGX"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" name="lastCellColor"/>
-                            </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                 <real key="value" value="2"/>
                             </userDefinedRuntimeAttribute>
@@ -53,7 +50,13 @@
                                 <real key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="lastCellColor"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="searhView:" destination="KGk-i7-Jjw" eventType="touchDragInside" id="hqc-Ya-GXJ"/>
+                        </connections>
                     </view>
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="6Ra-ml-BNX"/>
@@ -75,7 +78,7 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="search" destination="n0V-IU-UxR" id="S8o-WA-Ifg"/>
-                <outlet property="searchView" destination="Iht-iV-Jgt" id="Jqm-cO-NGb"/>
+                <outlet property="searchView" destination="Iht-iV-Jgt" id="uWS-28-N3j"/>
             </connections>
             <point key="canvasLocation" x="3" y="66"/>
         </tableViewCell>
