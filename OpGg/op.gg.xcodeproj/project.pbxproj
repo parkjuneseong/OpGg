@@ -59,7 +59,6 @@
 		8C375E48294340BE00E7F437 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E46294340BE00E7F437 /* SearchCell.swift */; };
 		8C375E49294340BE00E7F437 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C375E47294340BE00E7F437 /* SearchCell.xib */; };
 		8C375E4B294340CE00E7F437 /* SearchCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E4A294340CE00E7F437 /* SearchCellPresenter.swift */; };
-		8C375E512944680300E7F437 /* SenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E502944680300E7F437 /* SenceDelegate.swift */; };
 		8C375E53294468D600E7F437 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E52294468D600E7F437 /* TabBarController.swift */; };
 		8C375E5729446C7900E7F437 /* ChampionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E5529446C7900E7F437 /* ChampionsView.swift */; };
 		8C375E5829446C7900E7F437 /* ChampionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C375E5629446C7900E7F437 /* ChampionsView.xib */; };
@@ -135,7 +134,6 @@
 		8C375E46294340BE00E7F437 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		8C375E47294340BE00E7F437 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		8C375E4A294340CE00E7F437 /* SearchCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellPresenter.swift; sourceTree = "<group>"; };
-		8C375E502944680300E7F437 /* SenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenceDelegate.swift; sourceTree = "<group>"; };
 		8C375E52294468D600E7F437 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8C375E5529446C7900E7F437 /* ChampionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsView.swift; sourceTree = "<group>"; };
 		8C375E5629446C7900E7F437 /* ChampionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionsView.xib; sourceTree = "<group>"; };
@@ -423,7 +421,6 @@
 				8CA1126A2935FB450086B021 /* LaunchScreen.storyboard */,
 				8CA1126D2935FB450086B021 /* Info.plist */,
 				8CA03F3B293A00AF00EC9F34 /* DarkMode.swift */,
-				8C375E502944680300E7F437 /* SenceDelegate.swift */,
 			);
 			path = op.gg;
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 				3F4944EF29597E3D0094AC0A /* CommonSearchHeaderView.swift in Sources */,
 				8CCEA73C293DE7EA00B4299A /* MyProfile.swift in Sources */,
 				3F3CF3FD29532D2700500B1E /* SearchView.swift in Sources */,
-				8C375E512944680300E7F437 /* SenceDelegate.swift in Sources */,
 				3FDB29C729487F7F00BBA4F8 /* SaleCollectionViewCell.swift in Sources */,
 				3FDB29C129487CE900BBA4F8 /* Sale.swift in Sources */,
 				3F00DD40294F0307008E7C6A /* CommonFooterView.swift in Sources */,

@@ -13,15 +13,13 @@ class CommonSearchHeaderView: UIView {
     }
     private var containerView = UIView()
     
-    @IBOutlet weak var searchHeaderView: UILabel!
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
     }
     
-    required init?  (coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
         loadNib()
     }

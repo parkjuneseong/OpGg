@@ -6,6 +6,7 @@ import UIKit
 class SearchCellPresenter {
     private let cellId = "SearchCell"
     private var model: Cell4Model?
+    weak var delegate: SearchCellDelegate?
     
     func set(model: Cell4Model?) {
         self.model = model
@@ -18,6 +19,7 @@ extension SearchCellPresenter: CommonTablePresenter {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SearchCell else {
             return UITableViewCell()
         }
+        cell.delegate = delegate
         cell.bind(model: model)
         
         return cell

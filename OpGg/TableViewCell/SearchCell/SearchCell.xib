@@ -55,7 +55,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
-                            <action selector="searhView:" destination="KGk-i7-Jjw" eventType="touchDragInside" id="hqc-Ya-GXJ"/>
+                            <action selector="searchViewAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4If-zG-QNF"/>
                         </connections>
                     </view>
                 </subviews>

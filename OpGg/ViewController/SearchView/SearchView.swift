@@ -14,31 +14,11 @@ class SearchView: UIViewController {
     @IBOutlet weak var searchTableView: UITableView!
     var index: Int = 0
     var delegate: ComponentProductCellDelegate?
-    var list = [
-        [ "nickname" : "소환사이름"]
-    ]
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
-//
-//
-//
-//            return cell
-//        }
-
-    
-//    weak var delegate : SearchView
-   
+    var list = ["adkasld", "72세병만이", "동휘가춤을춰요"]
 
     override func viewDidLoad() {
         searchTableView.register(UINib(nibName: "SearchViewCell", bundle: nil), forCellReuseIdentifier: "SearchViewCell")
-//        SearchView.delegate = self
     }
-    
-    
     
 }
 
@@ -46,19 +26,24 @@ extension SearchView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchTableView.dequeueReusableCell(withIdentifier: "SearchViewCell", for: indexPath) as? SearchViewCell
-        cell?.bind(nickname: list[indexPath.row]["nickname"] ?? "" )
+        cell?.bind(nickname: list[indexPath.row])
         return cell ?? SearchViewCell()
-        
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = CommonSearchHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 70))
+        return view
+    }
     
-    
-    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        70
+    }
     
 }
 

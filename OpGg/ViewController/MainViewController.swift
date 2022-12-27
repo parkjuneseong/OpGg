@@ -164,6 +164,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
         advertiseCellPresenter.set(model: cell2Model)
         favoriteCellPresenter.set(model: cell3Model)
         searchCellPresenter.set(model:cell4Model)
+        searchCellPresenter.delegate = self
         patchNoteCellPresenter.set(model:patchNoteList)
         championTearCellPresenter.set(model:championModel)
         favoriteChampPresenter.set(model:favoriteChampModel)
@@ -274,4 +275,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
 ////        naVC = modalPresentationStyle = .fullScreen
 //        present(naVC.self,animated: true)
 //    }
+}
+
+// MARK: SearchCellDelegate
+extension MainViewController: SearchCellDelegate {
+    func searchViewAction() {
+        let vc = SearchView()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
