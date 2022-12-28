@@ -26,7 +26,6 @@
 		3F1657E929506679002D2627 /* String+MiddleLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1657E829506679002D2627 /* String+MiddleLine.swift */; };
 		3F3CF3FD29532D2700500B1E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3CF3FB29532D2700500B1E /* SearchView.swift */; };
 		3F3CF3FE29532D2700500B1E /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3CF3FC29532D2700500B1E /* SearchView.xib */; };
-		3F45197B29558DBA002C1068 /* DelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F45197A29558DBA002C1068 /* DelegateProtocol.swift */; };
 		3F4944EC295978590094AC0A /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4944EA295978590094AC0A /* SearchViewCell.swift */; };
 		3F4944ED295978590094AC0A /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F4944EB295978590094AC0A /* SearchViewCell.xib */; };
 		3F4944EF29597E3D0094AC0A /* CommonSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4944EE29597E3D0094AC0A /* CommonSearchHeaderView.swift */; };
@@ -59,7 +58,6 @@
 		8C375E48294340BE00E7F437 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E46294340BE00E7F437 /* SearchCell.swift */; };
 		8C375E49294340BE00E7F437 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C375E47294340BE00E7F437 /* SearchCell.xib */; };
 		8C375E4B294340CE00E7F437 /* SearchCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E4A294340CE00E7F437 /* SearchCellPresenter.swift */; };
-		8C375E512944680300E7F437 /* SenceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E502944680300E7F437 /* SenceDelegate.swift */; };
 		8C375E53294468D600E7F437 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E52294468D600E7F437 /* TabBarController.swift */; };
 		8C375E5729446C7900E7F437 /* ChampionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C375E5529446C7900E7F437 /* ChampionsView.swift */; };
 		8C375E5829446C7900E7F437 /* ChampionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C375E5629446C7900E7F437 /* ChampionsView.xib */; };
@@ -102,7 +100,6 @@
 		3F1657E829506679002D2627 /* String+MiddleLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MiddleLine.swift"; sourceTree = "<group>"; };
 		3F3CF3FB29532D2700500B1E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		3F3CF3FC29532D2700500B1E /* SearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
-		3F45197A29558DBA002C1068 /* DelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocol.swift; sourceTree = "<group>"; };
 		3F4944EA295978590094AC0A /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
 		3F4944EB295978590094AC0A /* SearchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
 		3F4944EE29597E3D0094AC0A /* CommonSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSearchHeaderView.swift; sourceTree = "<group>"; };
@@ -135,7 +132,6 @@
 		8C375E46294340BE00E7F437 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		8C375E47294340BE00E7F437 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		8C375E4A294340CE00E7F437 /* SearchCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCellPresenter.swift; sourceTree = "<group>"; };
-		8C375E502944680300E7F437 /* SenceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenceDelegate.swift; sourceTree = "<group>"; };
 		8C375E52294468D600E7F437 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		8C375E5529446C7900E7F437 /* ChampionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsView.swift; sourceTree = "<group>"; };
 		8C375E5629446C7900E7F437 /* ChampionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChampionsView.xib; sourceTree = "<group>"; };
@@ -184,7 +180,6 @@
 				3F00DD41294F0325008E7C6A /* CommonFooterView.xib */,
 				3F1657E829506679002D2627 /* String+MiddleLine.swift */,
 				3F4CB4E02951A3CA0012791A /* PaddingLabel.swift */,
-				3F45197A29558DBA002C1068 /* DelegateProtocol.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -423,7 +418,6 @@
 				8CA1126A2935FB450086B021 /* LaunchScreen.storyboard */,
 				8CA1126D2935FB450086B021 /* Info.plist */,
 				8CA03F3B293A00AF00EC9F34 /* DarkMode.swift */,
-				8C375E502944680300E7F437 /* SenceDelegate.swift */,
 			);
 			path = op.gg;
 			sourceTree = "<group>";
@@ -533,7 +527,6 @@
 				3F4944EF29597E3D0094AC0A /* CommonSearchHeaderView.swift in Sources */,
 				8CCEA73C293DE7EA00B4299A /* MyProfile.swift in Sources */,
 				3F3CF3FD29532D2700500B1E /* SearchView.swift in Sources */,
-				8C375E512944680300E7F437 /* SenceDelegate.swift in Sources */,
 				3FDB29C729487F7F00BBA4F8 /* SaleCollectionViewCell.swift in Sources */,
 				3FDB29C129487CE900BBA4F8 /* Sale.swift in Sources */,
 				3F00DD40294F0307008E7C6A /* CommonFooterView.swift in Sources */,
@@ -555,7 +548,6 @@
 				8C375E5B294604BF00E7F437 /* PatchNoteCell.swift in Sources */,
 				3F4944EC295978590094AC0A /* SearchViewCell.swift in Sources */,
 				3FDB29B629486FB500BBA4F8 /* FavoriteChampPresenter.swift in Sources */,
-				3F45197B29558DBA002C1068 /* DelegateProtocol.swift in Sources */,
 				324141402942F2FD00C29B9E /* MyProfilePresenter.swift in Sources */,
 				3F4CB4E12951A3CA0012791A /* PaddingLabel.swift in Sources */,
 				8C375E5729446C7900E7F437 /* ChampionsView.swift in Sources */,

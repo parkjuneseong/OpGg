@@ -6,10 +6,13 @@ import UIKit
 class SearchCellPresenter {
     private let cellId = "SearchCell"
     private var model: Cell4Model?
+    weak var delegate : SearchCellDelegate?
+
     
     func set(model: Cell4Model?) {
         self.model = model
     }
+    
 }
 
 // MARK: - CommonTablePresenter

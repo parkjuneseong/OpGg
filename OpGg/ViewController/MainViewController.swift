@@ -9,7 +9,11 @@
 import UIKit
 import SwiftUI
 
-class MainViewController: UIViewController, UITabBarControllerDelegate{
+class MainViewController: UIViewController, UITabBarControllerDelegate, SearchCellDelegate{
+    func searchViewAction() {
+        print("dd")
+    }
+    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var opggimage: UIImageView!
     //    @IBOutlet weak var tabbar: UITabBar!
@@ -164,6 +168,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
         advertiseCellPresenter.set(model: cell2Model)
         favoriteCellPresenter.set(model: cell3Model)
         searchCellPresenter.set(model:cell4Model)
+        searchCellPresenter.delegate = self
         patchNoteCellPresenter.set(model:patchNoteList)
         championTearCellPresenter.set(model:championModel)
         favoriteChampPresenter.set(model:favoriteChampModel)

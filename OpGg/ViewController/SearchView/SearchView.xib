@@ -22,10 +22,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApD-SN-8zH" userLabel="mainView">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                     <color key="backgroundColor" name="backGroundColor"/>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-BJ-VfI">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NOe-BJ-VfI">
                     <rect key="frame" x="0.0" y="52" width="393" height="800"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -44,7 +44,7 @@
                 <constraint firstItem="NOe-BJ-VfI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4xy-D0-k1A"/>
                 <constraint firstItem="ApD-SN-8zH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8CF-le-1zr"/>
                 <constraint firstItem="NOe-BJ-VfI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="I0r-gt-nvZ"/>
-                <constraint firstItem="NOe-BJ-VfI" firstAttribute="top" secondItem="ApD-SN-8zH" secondAttribute="bottom" id="fd0-jy-GQ0"/>
+                <constraint firstItem="NOe-BJ-VfI" firstAttribute="top" secondItem="ApD-SN-8zH" secondAttribute="bottom" constant="8" id="fd0-jy-GQ0"/>
                 <constraint firstAttribute="bottom" secondItem="NOe-BJ-VfI" secondAttribute="bottom" id="jfF-ac-R8K"/>
                 <constraint firstItem="ApD-SN-8zH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qGG-6g-NZN"/>
                 <constraint firstItem="ApD-SN-8zH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x03-Wy-f3G"/>

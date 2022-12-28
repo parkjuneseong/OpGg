@@ -4,49 +4,35 @@
 //
 //  Created by June on 2022/12/09.
 //
-
+protocol SearchCellDelegate: AnyObject {
+    func searchViewAction()
+}
 import UIKit
 
-class SearchCell: UITableViewCell/*SearchViewDelegate*/ {
+class SearchCell: UITableViewCell
+    {
     @IBOutlet weak var search: UILabel!
     @IBOutlet weak var searchView: UIControl!
-//    weak var delegate : SearchViewDelegate?
+    weak var delegate : SearchCellDelegate?
     
-    @IBAction func searchView(_ sender: UIButton) {
-//        self.delegate = SearchView
-//        SearchView.delegate = self
-//        self.delegate?.searchView(index: index)
-//        var index: Int = 0
-//        var delegate: ComponentProductCellDelegate?
-        //        let rootVC = SearchView()
-        //                self.present(rootVC,animated:true)
+    @IBAction func searchViewAction(_ sender: Any) {
+       print("dd")
+        let vc = SearchView()
+           self.navigationController?.pushViewController(vc, animated: true)
+
     }
-    
-    
-    
-    
-    
-    func viewDidload(){
-//                super.viewDidload()
-        
-//        searchButton.setTitle("소환사 검색", for: .normal)
-//        searchButton.tintColor = .black
-//        searchButton.addSubview(searchButton)
-//        searchButton.backgroundColor = .white
-//        searchButton.frame = CGRect(x: 110, y: 110, width: 50, height: 20)
-//        searchButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-    }
-//    @objc private func didTapButton(){
-////        let rootVC = SearchView()
-////        let naVC = UINavigationController(rootViewController: rootVC)
-//
-////        searchView.delegate = self
-////        self.navigationController?.pushViewController(rootVC, animated: true)
-//        //        naVC = modalPresentationStyle = .fullScreen
-//        //        self.present(naVC.self,animated: true)
-//    }
-    
-    func bind(model: Cell4Model?) {
+    func application(_ application:UIApplication, didFinishLaunchingWithOptionslaunchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+       // Override point for customization after application launch.
+       
+//       window = UIWindow(frame:UIScreen.main.bounds)
+       window?.makeKeyAndVisible()
+       
+       let rootViewcontroller = UINavigationController(rootViewController: MainViewController())
+       
+       window?.rootViewController = rootViewcontroller
+       return true
+     }
+        func bind(model: Cell4Model?) {
         // nil check
         guard let model = model else {
             return
