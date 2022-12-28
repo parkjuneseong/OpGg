@@ -12,10 +12,7 @@ class SearchView: UIViewController {
 
     @IBOutlet weak var searchTableView: UITableView!
     var index: Int = 0
-    var list = [
-        [ "nickname" : "소환사이름"]
-        
-    ]
+    var list = ["adkasld", "72세병만이", "동휘가춤을춰요"]
     override func viewDidLoad() {
         searchTableView.register(UINib(nibName: "SearchViewCell", bundle: nil), forCellReuseIdentifier: "SearchViewCell")
         
@@ -31,7 +28,7 @@ extension SearchView: UITableViewDelegate, UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchTableView.dequeueReusableCell(withIdentifier: "SearchViewCell", for: indexPath) as? SearchViewCell
-        cell?.bind(nickname: list[indexPath.row]["nickname"] ?? "" )
+        cell?.bind(nickname: list[indexPath.row])
         return cell ?? SearchViewCell()
         
     }

@@ -4,10 +4,12 @@
 //
 //  Created by June on 2022/12/09.
 //
+import UIKit
+
 protocol SearchCellDelegate: AnyObject {
     func searchViewAction()
 }
-import UIKit
+
 
 class SearchCell: UITableViewCell
     {
@@ -15,30 +17,18 @@ class SearchCell: UITableViewCell
     @IBOutlet weak var searchView: UIControl!
     weak var delegate : SearchCellDelegate?
     
-    @IBAction func searchViewAction(_ sender: Any) {
-       print("dd")
-        let vc = SearchView()
-           self.navigationController?.pushViewController(vc, animated: true)
+    func bind(model: Cell4Model?) {
+    // nil check
+    guard let model = model else {
+        return
+    }
+    search.text = model.search
+}
 
+    @IBAction func searchViewAction(_ sender: UIControl) {
+        delegate?.searchViewAction()
     }
-    func application(_ application:UIApplication, didFinishLaunchingWithOptionslaunchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-       // Override point for customization after application launch.
-       
-//       window = UIWindow(frame:UIScreen.main.bounds)
-       window?.makeKeyAndVisible()
-       
-       let rootViewcontroller = UINavigationController(rootViewController: MainViewController())
-       
-       window?.rootViewController = rootViewcontroller
-       return true
-     }
-        func bind(model: Cell4Model?) {
-        // nil check
-        guard let model = model else {
-            return
-        }
-        search.text = model.search
-    }
+    
 }
 
 

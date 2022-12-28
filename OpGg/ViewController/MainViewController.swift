@@ -9,10 +9,8 @@
 import UIKit
 import SwiftUI
 
-class MainViewController: UIViewController, UITabBarControllerDelegate, SearchCellDelegate{
-    func searchViewAction() {
-        print("dd")
-    }
+class MainViewController: UIViewController, UITabBarControllerDelegate{
+ 
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var opggimage: UIImageView!
@@ -279,4 +277,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
 ////        naVC = modalPresentationStyle = .fullScreen
 //        present(naVC.self,animated: true)
 //    }
+}
+extension MainViewController : SearchCellDelegate{
+    func searchViewAction(){
+        let vc = SearchView()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

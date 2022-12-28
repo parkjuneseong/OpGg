@@ -21,6 +21,7 @@ extension SearchCellPresenter: CommonTablePresenter {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SearchCell else {
             return UITableViewCell()
         }
+        cell.delegate = delegate
         cell.bind(model: model)
         
         return cell
@@ -76,3 +77,4 @@ extension SearchCellPresenter: CommonTablePresenter {
         }
     }
 }
+
