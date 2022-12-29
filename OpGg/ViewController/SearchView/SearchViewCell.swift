@@ -11,9 +11,15 @@ class SearchViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
 
-
-    func bind(nickname:String){
+    @IBOutlet weak var mainImage: UIImageView!
+    
+    @IBOutlet weak var tearWrite: UILabel!
+    @IBOutlet weak var tearMark: UIImageView!
+    func bind(nickname:String,tear:String,image:UIImage, image2 : UIImage){
         name.text = nickname
+        mainImage.image = image
+        tearMark.image = image2
+        tearWrite.text = tear
         
     }
    

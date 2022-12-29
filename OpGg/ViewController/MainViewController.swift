@@ -128,6 +128,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
     }
     
     private func setPatchNoteModel(){
+        
         let patchModel = PatchModel(title: "9.24일 패치노트", thumbnailImage: UIImage(named: "patchnoteImage1") ?? UIImage())
         let patxhModel2 = PatchModel(title: "10.24일 패치노트", thumbnailImage: UIImage(named: "patchnoteImage2") ?? UIImage())
         let patchModel3 = PatchModel(title: "11.24일 패치노트", thumbnailImage: UIImage(named: "patchnoteImage3") ?? UIImage())
@@ -138,6 +139,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
         patchNoteList.append(patchModel4)
     }
     private func setorderGameModel(){
+        
         let ordergameModel = OrderModel(orderGameImage: UIImage(named:"orderGame1") ?? UIImage())
         let ordergameMode2 = OrderModel(orderGameImage: UIImage(named:"orderGame2") ?? UIImage())
         let ordergameMode3 = OrderModel(orderGameImage: UIImage(named:"orderGame3") ?? UIImage())
@@ -148,6 +150,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
         orderGameList.append(ordergameMode4)
     }
     private func setSaleModel(){
+        
         let saleModel = SaleModel(saleImage: UIImage(named:"saleTitle") ?? UIImage(), discountShow: "모두 보기", during: "~12.19", discountPrice: "560RP", salecolImage: UIImage(named:"saleChamp1") ?? UIImage(), price: "975RP", one:"Champion",two:"조이",three:"60%",four:"390RP",five: "~12.19", price2: "270RP")
         let saleModel2 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp2") ?? UIImage(), price: "1350RP",one:"Skin",two: "어둠의인도자 야스오",three:"60%",four:"975RP",five: "~12.24", price2: "")
         let saleModel3 = SaleModel(saleImage: UIImage(named:"") ?? UIImage(), discountShow: "", during: "", discountPrice: "", salecolImage: UIImage(named:"saleChamp3") ?? UIImage(), price:"580RP",one: "Champion",two: "그라가스", three: "75%",four: "190RP",five: "~12.31", price2: "")
@@ -162,6 +165,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
     
     
     private func setPresenterModel() {
+        
         sectionCell1Presenter.set(model: cell1Model)
         advertiseCellPresenter.set(model: cell2Model)
         favoriteCellPresenter.set(model: cell3Model)
@@ -200,6 +204,7 @@ class MainViewController: UIViewController, UITabBarControllerDelegate{
     }
     
     func registerCells() {
+        
         tablePresenters.forEach {
             $0?.registerCell(to: tableView)
         }
@@ -271,16 +276,24 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         return presenter.footerHeight
     }
     
-//    @objc private func didTapButton(){
-//        let rootVC = SearchView()
-//        let naVC = UINavigationController(rootViewController: rootVC)
-////        naVC = modalPresentationStyle = .fullScreen
-//        present(naVC.self,animated: true)
-//    }
 }
 extension MainViewController : SearchCellDelegate{
     func searchViewAction(){
         let vc = SearchView()
         self.navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.navigationBar.isHidden = true //back 버튼 없어짐
+        
     }
+    // 창의 navigationbar를 숨겨줌
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            
+            navigationController?.setNavigationBarHidden(true, animated: animated)
+        }
+
+    // 숨겨진 navigationbar가 다음 창으로 animated될때 다시 생김
+//        override func viewWillDisappear(_ animated: Bool) {
+//            super.viewWillDisappear(animated)
+//            navigationController?.setNavigationBarHidden(false, animated: animated)
+//        }
 }
