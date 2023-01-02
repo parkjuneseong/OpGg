@@ -21,8 +21,16 @@ class SearchView: UIViewController {
         [ "nickname" : "72세병만이", "tear" : "P4", "image" : "icon",
           "image2" : "pl" ],
         [ "nickname" : "동휘가춤을춰요", "tear" : "G4", "image" : "hwi",
-          "image2" : "gold" ]
-        //
+          "image2" : "gold" ],
+        ["nickname" : "김인태" , "tear" : "D4" , "image" : "kit", "image2" : "dia" ],
+        ["nickname" : "김준후" , "tear" : "C1" , "image" : "kjh", "image2" : "chall" ],
+        ["nickname" : "이진욱" , "tear" : "D4" , "image" : "ljw", "image2" : "dia" ],
+        ["nickname" : "최봉기" , "tear" : "G4" , "image" : "cbk", "image2" : "gold" ],
+        ["nickname" : "주형일" , "tear" : "G4" , "image" : "jhi", "image2" : "gold" ],
+        ["nickname" : "안상수" , "tear" : "P4" , "image" : "ass", "image2" : "pl" ],
+        ["nickname" : "박창규" , "tear" : "G4" , "image" : "pcg", "image2" : "gold" ],
+        ["nickname" : "이현승" , "tear" : "S3" , "image" : "lhs", "image2" : "sil" ]
+        
     ]
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         
@@ -71,7 +79,7 @@ extension SearchView: UITableViewDelegate, UITableViewDataSource{
         
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 80
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = CommonSearchHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))

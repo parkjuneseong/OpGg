@@ -39,14 +39,14 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Idl-hQ-6rP">
-                        <rect key="frame" x="105" y="59.5" width="20" height="20"/>
+                        <rect key="frame" x="95" y="59.5" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="18a-7q-vYM"/>
                             <constraint firstAttribute="width" constant="20" id="aO0-5g-I6e"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소환사를 검색한 후 등록해주세요!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh2-Va-Yqd">
-                        <rect key="frame" x="106" y="80.5" width="211" height="19.5"/>
+                        <rect key="frame" x="91" y="80.5" width="211" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -66,7 +66,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="즐겨찾기한 소환사가 없습니다." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-GO-EcC">
-                        <rect key="frame" x="127" y="60" width="193" height="19.5"/>
+                        <rect key="frame" x="117" y="60" width="193" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -80,9 +80,9 @@
                     <constraint firstAttribute="trailing" secondItem="HcN-Tf-cFY" secondAttribute="trailing" constant="3" id="LAj-4J-Way"/>
                     <constraint firstItem="DpO-GO-EcC" firstAttribute="leading" secondItem="Idl-hQ-6rP" secondAttribute="trailing" constant="2" id="b8h-6N-vBE"/>
                     <constraint firstItem="VM7-gr-jFR" firstAttribute="top" secondItem="Sh2-Va-Yqd" secondAttribute="bottom" constant="10" id="grC-je-CP7"/>
-                    <constraint firstItem="Idl-hQ-6rP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="105" id="hnv-qI-sK6"/>
+                    <constraint firstItem="Idl-hQ-6rP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="95" id="hnv-qI-sK6"/>
                     <constraint firstItem="v1u-6Y-WAd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="rde-JJ-pXd"/>
-                    <constraint firstItem="Sh2-Va-Yqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="90" id="vp7-nC-0kz"/>
+                    <constraint firstItem="Sh2-Va-Yqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="75" id="vp7-nC-0kz"/>
                     <constraint firstItem="HcN-Tf-cFY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xCS-eg-VaN"/>
                     <constraint firstItem="Sh2-Va-Yqd" firstAttribute="top" secondItem="DpO-GO-EcC" secondAttribute="bottom" constant="1" id="xPG-jf-awZ"/>
                     <constraint firstItem="HcN-Tf-cFY" firstAttribute="leading" secondItem="v1u-6Y-WAd" secondAttribute="trailing" constant="1" id="xfH-bB-pnD"/>

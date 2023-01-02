@@ -1,0 +1,6 @@
+framework module Pods_op_gg {
+  umbrella header "Pods-op.gg-umbrella.h"
+
+  export *
+  module * { export * }
+}

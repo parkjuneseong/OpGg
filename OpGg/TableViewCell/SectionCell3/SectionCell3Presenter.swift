@@ -63,7 +63,7 @@ extension FavoriteCellPresenter: CommonTablePresenter {
     
     var headerView: UIView? {
         get {
-            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+            let view = CommonHeaderView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 30))
             view.headerLabel.text = ""
             
             return view
@@ -74,7 +74,7 @@ extension FavoriteCellPresenter: CommonTablePresenter {
 
     var headerHeight: CGFloat {
         get {
-            return 50
+            return 30
         } set {
             _ = newValue
         }
