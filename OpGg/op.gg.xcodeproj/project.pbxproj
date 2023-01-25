@@ -37,6 +37,7 @@
 		3F676D9E294ED8D0007B4E45 /* SetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F676D9C294ED8D0007B4E45 /* SetView.xib */; };
 		3F676DA0294EEE3F007B4E45 /* UIView+Radius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676D9F294EEE3F007B4E45 /* UIView+Radius.swift */; };
 		3F676DA2294EEE65007B4E45 /* GrandientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F676DA1294EEE65007B4E45 /* GrandientView.swift */; };
+		3F783F5D2969677D004D1544 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F783F5C2969677D004D1544 /* Alamofire.swift */; };
 		3F81B34A294ED2DB005A55CE /* EsportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81B348294ED2DB005A55CE /* EsportView.swift */; };
 		3F81B34B294ED2DB005A55CE /* EsportView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F81B349294ED2DB005A55CE /* EsportView.xib */; };
 		3FDB29AC2948691900BBA4F8 /* ChampionTearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB29AA2948691900BBA4F8 /* ChampionTearCell.swift */; };
@@ -113,6 +114,7 @@
 		3F676D9C294ED8D0007B4E45 /* SetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetView.xib; sourceTree = "<group>"; };
 		3F676D9F294EEE3F007B4E45 /* UIView+Radius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Radius.swift"; sourceTree = "<group>"; };
 		3F676DA1294EEE65007B4E45 /* GrandientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrandientView.swift; sourceTree = "<group>"; };
+		3F783F5C2969677D004D1544 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
 		3F81B348294ED2DB005A55CE /* EsportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsportView.swift; sourceTree = "<group>"; };
 		3F81B349294ED2DB005A55CE /* EsportView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EsportView.xib; sourceTree = "<group>"; };
 		3FDB29AA2948691900BBA4F8 /* ChampionTearCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionTearCell.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				3F00DD41294F0325008E7C6A /* CommonFooterView.xib */,
 				3F1657E829506679002D2627 /* String+MiddleLine.swift */,
 				3F4CB4E02951A3CA0012791A /* PaddingLabel.swift */,
+				3F783F5C2969677D004D1544 /* Alamofire.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -343,7 +346,6 @@
 				0CE26D27A3341B50677ED4A4 /* Pods-op.gg.debug.xcconfig */,
 				ECA39914225BC1190DD0DA6C /* Pods-op.gg.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -585,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F783F5D2969677D004D1544 /* Alamofire.swift in Sources */,
 				8CA03F3C293A00AF00EC9F34 /* DarkMode.swift in Sources */,
 				8C375E53294468D600E7F437 /* TabBarController.swift in Sources */,
 				8CA03F312939E7D800EC9F34 /* MainViewController.swift in Sources */,
